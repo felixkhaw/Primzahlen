@@ -9,6 +9,12 @@ public class PrimzahlenTest {
 			lässt sich das auf diese Weise nicht abbilden. Die einzige statische bekannte Größe
 			sind die 1000 Zahlen. Wenn man die Zahlen als Boolean Array anlegen würde könnte man
 			die Zahl zum einen gut streichen und der Index würde die Zahl repräsentieren um die es geht.
-		*/   
+		*/
+		boolean[] zahlen = new boolean[1001] // 1001 weil Index bei 0 beginnt; wird initialisiert mit false
+		for(int i = 2; i <= zahlen.length; i++){ // false bedeutet Zahl ist nicht gestrichen
+			if(zahl[i] == false){  // Wenn noch nicht gestrichen dann berückstigen
+				
+			}
+		}
   	}
 }

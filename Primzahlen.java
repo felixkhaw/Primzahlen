@@ -1,4 +1,4 @@
-public class Primzahlen {
+public class Zahlen {
 	public static int[] erstelleZahlen(int x){
 		int[] tmp_array = new int[1001-x];
 		int tmp_index = 0;

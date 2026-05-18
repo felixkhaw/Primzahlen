@@ -11,17 +11,20 @@ public class PrimzahlenTest {
 			die Zahl zum einen gut streichen und der Index würde die Zahl repräsentieren um die es geht.
 		*/
 		boolean[] zahlen = new boolean[1001]; // 1001 weil Index bei 0 beginnt; wird initialisiert mit false
+		for(int o = 0; o<zahlen.length; o++){
+			zahlen[o]=true;		
+		}
 		for(int i = 2; i<zahlen.length; i++){ // false bedeutet Zahl ist nicht gestrichen
-			if(zahlen[i] == false){  // Wenn noch nicht gestrichen dann berückstigen
+			if(zahlen[i] == true){  // Wenn noch nicht gestrichen dann berückstigen
 				for(int j = i; i*j<zahlen.length; j++){
-					zahlen[i*j] = true;
+					zahlen[i*j] = false;
 				}
 			}
 		}
 		// Ausgabe
-		for(int a = 0; a < zahlen.length; a++){
-			if(zahlen[a] == false){
-				System.out.println(a);
+		for(int a = 2; a < zahlen.length; a++){
+			if(zahlen[a]){
+				System.out.print(" " + a);
 			}
 		}
   	}
